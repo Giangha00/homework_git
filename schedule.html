@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NBA Superstars | Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #050505;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .nba-gradient {
+            background: linear-gradient(135deg, #1d428a 0%, #c8102e 100%);
+        }
+    </style>
+</head>
+
+<body class="text-white overflow-x-hidden">
+    <nav
+        class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass mt-4 mx-auto max-w-7xl rounded-full left-0 right-0">
+        <div class="text-2xl font-black tracking-tighter italic">NBA<span class="text-red-600">LIVE</span></div>
+        <div class="hidden md:flex space-x-8 font-medium text-sm uppercase tracking-widest">
+            <a href="index.html" class="hover:text-blue-500 transition">Home</a>
+            <a href="players.html" class="hover:text-blue-500 transition">Players</a>
+            <a href="teams.html" class="hover:text-blue-500 transition">Teams</a>
+            <a href="schedule.html" class="hover:text-blue-500 transition">Schedule</a>
+            <a href="stats.html" class="hover:text-blue-500 transition">Stats</a>
+        </div>
+        <button
+            class="bg-white text-black px-6 py-2 rounded-full font-bold text-sm hover:bg-red-600 hover:text-white transition">LEAGUE
+            PASS</button>
+    </nav>
+
+    <section class="relative min-h-screen flex flex-col items-center justify-center pt-24">
+        <div class="absolute inset-0 nba-gradient opacity-20 blur-[120px] -z-10"></div>
+        <div class="text-center px-4 max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-black uppercase mb-6">Upcoming Games</h1>
+            <p class="text-gray-400 text-lg md:text-xl mb-12">Stay ahead of the league with the latest matchup schedule
+                and key showdowns.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-6 rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-xl font-black">Lakers vs Warriors</h2>
+                        <span class="text-blue-400">Nov 10</span>
+                    </div>
+                    <p class="text-gray-300 mt-2">7:30 PM ET • Crypto.com Arena</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-xl font-black">Bucks vs Suns</h2>
+                        <span class="text-blue-400">Nov 12</span>
+                    </div>
+                    <p class="text-gray-300 mt-2">8:00 PM ET • Fiserv Forum</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-xl font-black">Nets vs 76ers</h2>
+                        <span class="text-blue-400">Nov 14</span>
+                    </div>
+                    <p class="text-gray-300 mt-2">7:00 PM ET • Barclays Center</p>
+                </div>
+                <div class="glass p-6 rounded-2xl">
+                    <div class="flex justify-between items-start">
+                        <h2 class="text-xl font-black">Heat vs Celtics</h2>
+                        <span class="text-blue-400">Nov 16</span>
+                    </div>
+                    <p class="text-gray-300 mt-2">8:30 PM ET • Kaseya Center</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-600 text-sm mt-10">
+        <p>&copy; 2024 NBA Media Ventures, LLC.</p>
+    </footer>
+</body>
+
+</html>
